@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateOpts: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+const formatted = post.data.date.toLocaleDateString('en-US', dateOpts);
+const isoDate = post.data.date.toISOString();
+---
+<Layout title={`${post.data.title} — Claudio Urdaneta`} description={post.data.description}>
+  <main>
+    <a href="/" class="back-link">← claudio urdaneta</a>
+
+    <article>
+      <header class="post-header">
+        <time class="post-date" datetime={isoDate}>{formatted}</time>
+        <h1 class="post-title">{post.data.title}</h1>
+      </header>
+
+      <div class="post-content">
+        <Content />
+      </div>
+    </article>
+
+    <footer class="post-footer">v1.0 · last updated 2026-05-01</footer>
+  </main>
+</Layout>
