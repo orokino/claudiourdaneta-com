@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+type Entry = { key: string; desc: string };
+
+const writing: Entry[] = [];
+
+const projects: Entry[] = [
+  { key: 'salvux', desc: 'Permit-to-Work SaaS for industrial safety' },
+  { key: 'alaric', desc: 'Personal AI chief-of-staff, self-hosted' },
+];
+
+const links = [
+  { label: 'github',   href: 'https://github.com/orokino' },
+  { label: 'linkedin', href: 'https://www.linkedin.com/in/claudio-urdaneta-397a31285/' },
+  { label: 'email',    href: 'mailto:caua1809@gmail.com' },
+];
+---
+<Layout>
+  <main>
+    <header class="name">Claudio Urdaneta</header>
+
+    <p class="bio">
+      Medical student at Universidad de La Laguna, working toward a career in clinical AI radiology. I build at the intersection of medicine and software.
+    </p>
+
+    <section>
+      <h2 class="section-header">writing/</h2>
+      {writing.map((w) => (
+        <div class="entry">
+          <span class="entry-key">{w.key}</span>
+          <span class="entry-desc">{w.desc}</span>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2 class="section-header">projects/</h2>
+      {projects.map((p) => (
+        <div class="entry">
+          <span class="entry-key">{p.key}</span>
+          <span class="entry-desc">{p.desc}</span>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2 class="section-header">elsewhere/</h2>
+      <p class="elsewhere">
+        {links.map((l, i) => (
+          <>
+            <a href={l.href}>{l.label}</a>{i < links.length - 1 && <span class="dot">·</span>}
+          </>
+        ))}
+      </p>
+    </section>
+
+    <footer>v1.0 · last updated 2026-05-01</footer>
+  </main>
+</Layout>
