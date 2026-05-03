@@ -1,15 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import { ui, projectDescriptions } from '../i18n/strings';
-import { getPostsForLocale, getSlugFromId } from '../i18n/utils';
+import Layout from '../../layouts/Layout.astro';
+import LanguageSwitcher from '../../components/LanguageSwitcher.astro';
+import { ui, projectDescriptions } from '../../i18n/strings';
+import { getPostsForLocale, getSlugFromId } from '../../i18n/utils';
 
-const t = ui.en;
-const posts = await getPostsForLocale('en');
+const t = ui.es;
+const posts = await getPostsForLocale('es');
 
 const projects = [
-  { key: 'salvux', desc: projectDescriptions.en.salvux },
-  { key: 'alaric', desc: projectDescriptions.en.alaric },
+  { key: 'salvux', desc: projectDescriptions.es.salvux },
+  { key: 'alaric', desc: projectDescriptions.es.alaric },
 ];
 
 const links = [
@@ -18,11 +18,11 @@ const links = [
   { label: 'email',    href: 'mailto:caua1809@gmail.com' },
 ];
 ---
-<Layout lang="en" alternateUrl="/es/">
+<Layout lang="es" alternateUrl="/">
   <main>
     <header class="masthead">
       <span class="name">Claudio Urdaneta</span>
-      <LanguageSwitcher currentLocale="en" alternateUrl="/es/" />
+      <LanguageSwitcher currentLocale="es" alternateUrl="/" />
     </header>
 
     <p class="bio">{t.bio}</p>
@@ -32,7 +32,7 @@ const links = [
       {posts.map((post) => (
         <div class="entry">
           <span class="entry-key">{post.data.date.getFullYear()}</span>
-          <span class="entry-desc"><a href={`/writing/${getSlugFromId(post.id)}/`}>{post.data.title}</a></span>
+          <span class="entry-desc"><a href={`/es/writing/${getSlugFromId(post.id)}/`}>{post.data.title}</a></span>
         </div>
       ))}
     </section>

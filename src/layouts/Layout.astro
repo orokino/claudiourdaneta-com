@@ -1,18 +1,27 @@
 ---
 import '../styles/global.css';
+import type { Locale } from '../i18n/strings';
 
 interface Props {
   title?: string;
   description?: string;
+  lang?: Locale;
+  alternateUrl?: string;
 }
 
 const {
   title = 'Claudio Urdaneta',
   description = 'Medical student at Universidad de La Laguna, working toward a career in clinical AI radiology.',
+  lang = 'en',
+  alternateUrl,
 } = Astro.props;
+
+const altLang: Locale = lang === 'en' ? 'es' : 'en';
+const siteOrigin = 'https://claudiourdaneta.com';
+const ogLocale = lang === 'en' ? 'en_US' : 'es_ES';
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,10 +32,15 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {alternateUrl && (
+      <link rel="alternate" hreflang={altLang} href={`${siteOrigin}${alternateUrl}`} />
+    )}
+    <link rel="alternate" hreflang="x-default" href={`${siteOrigin}/`} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://claudiourdaneta.com" />
+    <meta property="og:url" content={`${siteOrigin}${Astro.url.pathname}`} />
+    <meta property="og:locale" content={ogLocale} />
   </head>
   <body>
     <slot />
