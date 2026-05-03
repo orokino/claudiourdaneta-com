@@ -8,7 +8,7 @@ export const ui = {
     notFound: 'page not found',
   },
   es: {
-    bio: 'TODO_ES_BIO — Spanish translation of the bio (user fills in)',
+    bio: 'Estudiante de medicina en la Universidad de La Laguna, con miras a una carrera en radiología clínica con inteligencia artificial. Desarrollo proyectos en la intersección de la medicina y el software.',
     sections: { writing: 'escritura/', projects: 'proyectos/', elsewhere: 'enlaces/' },
     backLink: '← claudio urdaneta',
     notFound: 'página no encontrada',
@@ -18,10 +18,10 @@ export const ui = {
 export const projectDescriptions: Record<Locale, Record<string, string>> = {
   en: {
     salvux: 'Permit-to-Work SaaS for industrial safety',
-    alaric: 'Personal AI chief-of-staff, self-hosted',
+    alaric: 'Personal AI chief of operation',
   },
   es: {
-    salvux: 'TODO_ES_SALVUX — SaaS de permisos de trabajo para seguridad industrial',
-    alaric: 'TODO_ES_ALARIC — Asistente personal de IA, autoalojado',
+    salvux: 'SaaS de permisos de trabajo para seguridad industrial',
+    alaric: 'Asistente personal de IA, jefe de operaciones',
   },
 };
