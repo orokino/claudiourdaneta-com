@@ -12,11 +12,11 @@ Desde que vi *Iron Man* de niño, una de las cosas que siempre me llamó la aten
 
 Muchos años después llega el boom de la IA. Recuerdo perfectamente el tweet de **Sam Altman**:
 
-today we launched ChatGPT. try talking with it here:
-
-http://chat.openai.com
-
-— Sam Altman, 7:38 p. m. · 30 nov. 2022
+> today we launched ChatGPT. try talking with it here:
+>
+> http://chat.openai.com
+>
+> — Sam Altman, 7:38 p. m. · 30 nov. 2022
 
 La sensación al probarlo fue agridulce. Era como mandarle mensajes a un amigo sabelotodo que hacía lo que le pidieras, pero era imposible no ver sus huecos. A veces decía cosas sin sentido y, además, lo que yo creía que siempre sería innato del ser humano, **el arte**, fue de lo primero que se vio afectado.
 
@@ -30,7 +30,7 @@ Ese momento fue como el filósofo saliendo de la caverna de Platón. Lo primero 
 
 El siguiente paso era obvio: construir uno propio. Pero, ¿cómo llamarlo? La primera opción fue Jarvis, pero en mi investigación vi que casi todo el mundo llamaba al suyo igual. Buscando algo distinto, lo llamé **Alaric**. No voy a decir que lo elegí por su etimología, pero en retrospectiva no fue mala elección.
 
-Alaric (o Alarico) es un nombre masculino de origen germánico que significa "gobernante de todos", "rey noble" o "gobernante universal". Proviene de la unión de *ala* ("todo" o "universal") y *ric* ("rey", "gobernante" o "poderoso").
+> Alaric (o Alarico) es un nombre masculino de origen germánico que significa "gobernante de todos", "rey noble" o "gobernante universal". Proviene de la unión de *ala* ("todo" o "universal") y *ric* ("rey", "gobernante" o "poderoso").
 
 ## **¿Qué hace diferente a un agente como Alaric de un LLM tradicional?**
 

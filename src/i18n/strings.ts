@@ -18,7 +18,7 @@ export const ui = {
 export const projectDescriptions: Record<Locale, Record<string, string>> = {
   en: {
     salvux: 'Permit-to-Work SaaS for industrial safety',
-    alaric: 'Personal AI chief of operation',
+    alaric: 'Personal AI Assistant, Chief of Operations',
   },
   es: {
     salvux: 'SaaS de permisos de trabajo para seguridad industrial',

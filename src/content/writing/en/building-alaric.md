@@ -6,17 +6,17 @@ draft: false
 translationKey: building-alaric
 ---
 
-**The "context"**
+## **The "context"**
 
 Ever since I watched *Iron Man* as a kid, one of the things that always stuck with me was Tony Stark's virtual assistant, **Jarvis**. Jarvis knew what Stark needed before he asked, and ran every task without screwing it up. The idea of a supercomputer that just helps you stayed in my head as pure science fiction, and over the years it faded away.
 
 Many years later, the AI boom hits. I remember **Sam Altman's** tweet perfectly:
 
-today we launched ChatGPT. try talking with it here:
-
-http://chat.openai.com
-
-— Sam Altman, 7:38 p.m. · Nov 30, 2022
+> today we launched ChatGPT. try talking with it here:
+>
+> http://chat.openai.com
+>
+> — Sam Altman, 7:38 p.m. · Nov 30, 2022
 
 The first time I tried it, the feeling was bittersweet. It was like texting a know-it-all friend who'd do whatever you asked, but you just couldn't unsee the gaps. Sometimes it said nonsense, and the thing I always thought would stay uniquely human, **art**, was one of the first things it touched.
 
@@ -30,7 +30,7 @@ That moment felt like the philosopher walking out of Plato's cave. The first thi
 
 The next step was obvious: build my own. But what to call it? Jarvis was the first option, but in my research I noticed everyone names theirs that. Trying to be different, I went with **Alaric**. I won't sit here and say I picked it for the etymology, but in hindsight it wasn't a bad choice.
 
-Alaric is a male name of Germanic origin meaning "ruler of all," "noble king," or "universal ruler." It comes from *ala* ("all" / "universal") and *ric* ("king," "ruler," "powerful").
+> Alaric is a male name of Germanic origin meaning "ruler of all," "noble king," or "universal ruler." It comes from *ala* ("all" / "universal") and *ric* ("king," "ruler," "powerful").
 
 ## **What makes an agent like Alaric different from a regular LLM**
 
